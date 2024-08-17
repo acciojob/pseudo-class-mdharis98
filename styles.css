@@ -1,1 +1,26 @@
 /*  your css code here. If applicable */
+#container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Pseudo-element to insert content before the main content */
+#container::before {
+    content: "Before Content";
+    display: block;
+    color: #f00;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Pseudo-element to insert content after the main content */
+#container::after {
+    content: "After Content";
+    display: block;
+    color: #f00;
+    font-size: 20px;
+    margin-top: 10px;
+}
